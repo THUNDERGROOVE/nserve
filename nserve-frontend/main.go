@@ -52,7 +52,7 @@ var tmplText = `
 </div>
 
 <div class="container">
-	{if .HasError}}
+	{{if .HasError}}
 		<h1>Error!!!! :(</h1>
 		<p>{{.Error.Error}}</p>
 	{{else}}
@@ -78,7 +78,6 @@ var tmplText = `
 	</table>
 	{{end}}
 	</div>
-	{{end}}
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
