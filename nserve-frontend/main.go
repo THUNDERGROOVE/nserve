@@ -40,11 +40,11 @@ var tmplText = `
 	  <span class="icon-bar"></span>
 	  <span class="icon-bar"></span>
 	  </button>
-	  <a class="navbar-brand" href="maximumtwang.com">Maximumtwang</a>
+		<a class="navbar-brand" href="http://maximumtwang.com">Maximumtwang</a>
   </div>
 	<ul class="nav navbar-nav">
-		<li class="active"><a href="status.maximumtwang.com">status</a></li>
-		<li><a href="eve.maximumtwang.com">EVEMuGate</a></li>
+	<li class="active"><a href="http://status.maximumtwang.com">status</a></li>
+	<li><a href="http://eve.maximumtwang.com">EVEMuGate</a></li>
 
 	</ul>
 </div>
