@@ -18,4 +18,5 @@ type Target struct {
 	Port       string         `json:"port, omitempty"`
 	Location   string         `json:"location, omitempty"`
 	Data       TargetMetadata `json:"-"`
+	Running    bool           `json:"running, omitempty"`
 }

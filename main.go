@@ -108,9 +108,9 @@ func StartTarget(t *Target) {
 		dir, _ := filepath.Split(t.Command)
 		cmd.Dir = dir
 	}
-	t.Data.Running = true
+	t.Running = true
 	err := cmd.Run()
-	t.Data.Running = false
+	t.Running = false
 	if err != nil {
 		log.Printf("Failed to start target %s", t.Name)
 	}

@@ -51,7 +51,7 @@ var tmplText = `
 	{{range .Targets}}
 		<tr>
 		<td>{{.Name}}</td>
-		{{if .Data.Running}}
+		{{if .Running}}
 			<td><span class="label label-success">Okay</span></td>
 		{{else}}
 			<td><span class="label label-danger">Down :(</span></td>
