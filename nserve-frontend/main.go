@@ -35,40 +35,56 @@ var tmplText = `
 </head>
 <body>
 
-<div class="container">
-{{if .HasError}}
-	<h1>Error!!!! :(</h1>
-	<p>{{.Error.Error}}</p>
-{{else}}
-<table class="table table-striped">
-	<thead>
-		<tr>
-			<th>Service</th>
-			<th>Status</th>
-		</tr>
-	</thead>
-	<tbody>
-	{{range .Targets}}
-		<tr>
-		<td>{{.Name}}</td>
-		{{if .Running}}
-			<td><span class="label label-success">Okay</span></td>
-		{{else}}
-			<td><span class="label label-danger">Down :(</span></td>
-		{{end}}
-		</tr>
-	{{end}}
-	</tbody>
-</table>
-{{end}}
+<div class="navbar navbar-inverse">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	  <span class="sr-only">Toggle navigation</span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="maximumtwang.com">Maximumtwang</a>
+  </div>
+	<ul class="nav navbar-nav">
+		<li class="active"><a href="status.maximumtwang.com>status</a></li>
+		<li><a href="eve.maximumtwang.com/">EVEMuGate</a></li>
+	</ul>
 </div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-</body>
-</html>
-`
+<div class="container">
+	{if .HasError}}
+		<h1>Error!!!! :(</h1>
+		<p>{{.Error.Error}}</p>
+	{{else}}
+		<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Service</th>
+				<th>Status</th>
+			</tr>
+		</thead>
+		<tbody>
+	{{range .Targets}}
+		<tr>
+			<td>{{.Name}}</td>
+			{{if .Running}}
+				<td><span class="label label-success">Okay</span></td>
+			{{else}}
+				<td><span class="label label-danger">Down :(</span></td>
+			{{end}}
+		</tr>
+	{{end}}
+		</tbody>
+	</table>
+	{{end}}
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	</body>
+	</html>
+	`
 
 var mainT *template.Template
 
