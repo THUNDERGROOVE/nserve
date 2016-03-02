@@ -47,7 +47,7 @@ var tmplText = `
   </div>
 	<ul class="nav navbar-nav">
 		<li class="active"><a href="status.maximumtwang.com>status</a></li>
-		<li><a href="eve.maximumtwang.com/">EVEMuGate</a></li>
+		<li><a href="eve.maximumtwang.com">EVEMuGate</a></li>
 	</ul>
 </div>
 
